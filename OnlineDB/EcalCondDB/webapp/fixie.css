@@ -1,0 +1,9 @@
+/* 
+ * fixie.css
+ * A style sheet to fix IE bugs 
+ */
+
+body {
+ /* A hack to let IE use tooltips */
+ behavior:  url("csshover.htc");
+}

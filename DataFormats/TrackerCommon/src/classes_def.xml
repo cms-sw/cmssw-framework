@@ -1,0 +1,6 @@
+<lcgdict>
+ <class name="ClusterSummary">
+ </class>
+ <class name="edm::Wrapper<ClusterSummary>"/>
+</lcgdict>
+

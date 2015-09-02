@@ -1,0 +1,26 @@
+<lcgdict>
+
+ <class name="SiStripCluster" ClassVersion="11">
+  <version ClassVersion="11" checksum="3702468681"/>
+  <version ClassVersion="10" checksum="3791198690"/>
+  <field name="error_x" transient="true"/>
+ </class>
+ <class name="std::vector<SiStripCluster>"/>
+
+ <class name="edmNew::DetSetVector<SiStripCluster>"/>
+
+ <class name="edm::Wrapper< edmNew::DetSetVector<SiStripCluster> >"/>
+
+ <class name="edm::Ref<edmNew::DetSetVector<SiStripCluster>, SiStripCluster, edmNew::DetSetVector<SiStripCluster>::FindForDetSetVector>"/>
+
+
+ <class name="edm::ContainerMask<edmNew::DetSetVector<SiStripCluster> >"/>
+ <class name="edm::Wrapper<edm::ContainerMask<edmNew::DetSetVector<SiStripCluster> > >"/>
+
+
+ <class name="std::vector<edm::Ref<edmNew::DetSetVector<SiStripCluster>,SiStripCluster,edmNew::DetSetVector<SiStripCluster>::FindForDetSetVector> >" />
+ <class name="edmNew::DetSetVector<edm::Ref<edmNew::DetSetVector<SiStripCluster>,SiStripCluster,edmNew::DetSetVector<SiStripCluster>::FindForDetSetVector> >" />
+ <class name="edm::Wrapper<edmNew::DetSetVector<edm::Ref<edmNew::DetSetVector<SiStripCluster>,SiStripCluster,edmNew::DetSetVector<SiStripCluster>::FindForDetSetVector> > >" />
+
+
+</lcgdict>

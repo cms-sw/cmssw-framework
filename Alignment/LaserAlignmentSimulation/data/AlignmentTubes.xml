@@ -1,0 +1,339 @@
+<?xmsl version="1.0"?>
+<DDDefinition xmlns="http://www.cern.ch/cms/DDL" xmln:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cern.ch/cms/DDL ../../DDLSchema/DDLSchema.xsd">
+
+<!-- this file defines the geometry of the Alignment Tubes in the CMS Tracker -->
+
+<SolidSection label="AlignmentTubes.xml">
+  <!-- define the solids for the alignment tubes -->
+  <!-- this is for Alignment Tubes in +y direction -->
+  <Tubs name = "ATEV" dz = "1137.0*mm" rMin = "0.0*fm" rMax = "8.0*mm" startPhi = "0*deg" deltaPhi = "360*deg" />
+  <!-- this for Alingment Tubes in -y direction -->
+  <Tubs name = "AlignmentTube" dz = "0.5*1135.0*mm" rMin = "6.0*mm" rMax = "8.0*mm" startPhi = "0*deg" deltaPhi = "360*deg" />
+  <Tubs name = "Mirror" dz = "0.5*0.6*mm" rMin = "0.0*fm" rMax = "6.0*mm" startPhi = "0*deg" deltaPhi = "360*deg" />
+</SolidSection>
+
+<LogicalPartSection label = "AlignmentTubes.xml">
+  <!-- define the properties of the Solids -->
+  <LogicalPart name = "ATEV" category = "unspecified">
+   <rSolid name = "ATEV" />
+   <rMaterial name = "materials:T_Air" />
+  </LogicalPart>
+
+  <LogicalPart name = "AlignmentTube" category = "unspecified">
+   <rSolid name = "AlignmentTube" />
+   <rMaterial name = "tobmaterial:TOB_CF_Str" />
+  </LogicalPart>
+
+  <LogicalPart name = "Mirror" category = "unspecified">
+   <rSolid name = "Mirror" />
+   <rMaterial name = "materials:Si O_2" />
+  </LogicalPart>
+</LogicalPartSection>
+
+<PosPartSection label = "AlignmentTubes.xml">
+  <!-- position the logical parts -->
+
+  <!-- position the first alignment tube -->
+  <Algorithm name="global:DDAngular">
+   <rParent name = "tob:TOB" />
+   <String  name="ChildName"    value="AlignmentTubes:ATEV" />
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 564*cos(22.5*deg)*mm, 564*sin(22.5*deg)*mm, 0*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 0*deg, 0*deg, 0*deg, 0*deg, 0*deg, (22.5-90)*deg </Vector>
+  </Algorithm>
+
+  <!-- position the second alignment tube -->
+  <Algorithm name="global:DDAngular">
+   <rParent name = "tob:TOB" />
+   <String  name="ChildName"    value="AlignmentTubes:ATEV" />
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 564*cos(73.92857*deg)*mm, 564*sin(73.92857*deg)*mm, 0*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 0*deg, 0*deg, 0*deg, 0*deg, 0*deg, (73.92857-90)*deg </Vector>
+  </Algorithm>
+
+  <!-- position the third alignment tube -->
+  <Algorithm name="global:DDAngular">
+   <rParent name = "tob:TOB" />
+   <String  name="ChildName"    value="AlignmentTubes:ATEV" />
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 564*cos(106.07143*deg)*mm, 564*sin(106.07143*deg)*mm, 0*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 0*deg, 0*deg, 0*deg, 0*deg, 0*deg, (106.07143-90)*deg </Vector>
+  </Algorithm>
+
+  <!-- position the fourth alignment tube -->
+  <Algorithm name="global:DDAngular">
+   <rParent name = "tob:TOB" />
+   <String  name="ChildName"    value="AlignmentTubes:ATEV" />
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 564*cos(157.5*deg)*mm, 564*sin(157.5*deg)*mm, 0*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 0*deg, 0*deg, 0*deg, 0*deg, 0*deg, (157.5-90)*deg </Vector>
+  </Algorithm>
+
+  <!-- position the fifth alignment tube -->
+  <Algorithm name="global:DDAngular">
+   <rParent name = "tob:TOB" />
+   <String  name="ChildName"    value="AlignmentTubes:ATEV" />
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 564*cos(208.92857*deg)*mm, 564*sin(208.92857*deg)*mm, 0*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 0*deg, 0*deg, 0*deg, 0*deg, 0*deg, (208.92857-90)*deg </Vector>
+  </Algorithm>
+
+  <!-- position the sixth alignment tube -->
+  <Algorithm name="global:DDAngular">
+   <rParent name = "tob:TOB" />
+   <String  name="ChildName"    value="AlignmentTubes:ATEV" />
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 564*cos(247.5*deg)*mm, 564*sin(247.5*deg)*mm, 0*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 0*deg, 0*deg, 0*deg, 0*deg, 0*deg, (247.5-90)*deg </Vector>
+  </Algorithm>
+
+  <!-- position the seventh alignment tube -->
+  <Algorithm name="global:DDAngular">
+   <rParent name = "tob:TOB" />
+   <String  name="ChildName"    value="AlignmentTubes:ATEV" />
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 564*cos(298.92857*deg)*mm, 564*sin(298.92857*deg)*mm, 0*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 0*deg, 0*deg, 0*deg, 0*deg, 0*deg, (298.92857-90)*deg </Vector>
+  </Algorithm>
+
+  <!-- position the eigth alignment tube -->
+  <Algorithm name="global:DDAngular">
+   <rParent name = "tob:TOB" />
+   <String  name="ChildName"    value="AlignmentTubes:ATEV" />
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 564*cos(331.07143*deg)*mm, 564*sin(331.07143*deg)*mm, 0*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 0*deg, 0*deg, 0*deg, 0*deg, 0*deg, (331.07143-90)*deg </Vector>
+  </Algorithm>
+
+<!-- start of the alignment tube (+z direction) -->
+  <!-- the Alignment Tube -->
+  <PosPart copyNumber = "9">
+   <rParent name = "AlignmentTubes:ATEV" />
+   <rChild name = "AlignmentTubes:AlignmentTube" />
+   <rRotation name = "rotations:000D"/>
+   <Translation x="0*fm" y="0*fm" z="(567.5 + 2.0)*mm" />
+  </PosPart>
+
+  <!-- the first mirror (beam down) -->
+  <Algorithm name="global:DDAngular">
+   <rParent name="AlignmentTubes:ATEV"/>
+   <String  name="ChildName"    value="AlignmentTubes:Mirror"/>
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 0*mm, 0*mm, 180*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 90*deg, 135*deg, 90*deg, 90*deg, 90*deg, 90*deg </Vector>
+  </Algorithm>
+
+  <!-- the second mirror (beam up) -->
+  <Algorithm name="global:DDAngular">
+   <rParent name="AlignmentTubes:ATEV"/>
+   <String  name="ChildName"    value="AlignmentTubes:Mirror"/>
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 0*mm, 0*mm, (180 + 40)*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 90*deg, 45*deg, 90*deg, 90*deg, 90*deg, 90*deg </Vector>
+  </Algorithm>
+
+  <!-- the third mirror (beam down) -->
+  <Algorithm name="global:DDAngular">
+   <rParent name="AlignmentTubes:ATEV"/>
+   <String  name="ChildName"    value="AlignmentTubes:Mirror"/>
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 0*mm, 0*mm, 380*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 90*deg, 135*deg, 90*deg, 90*deg, 90*deg, 90*deg </Vector>
+  </Algorithm>
+
+  <!-- the fourth mirror (beam up) -->
+  <Algorithm name="global:DDAngular">
+   <rParent name="AlignmentTubes:ATEV"/>
+   <String  name="ChildName"    value="AlignmentTubes:Mirror"/>
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 0*mm, 0*mm, 580*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 90*deg, 45*deg, 90*deg, 90*deg, 90*deg, 90*deg </Vector>
+  </Algorithm>
+
+  <!-- the fifth mirror (beam down) -->
+  <Algorithm name="global:DDAngular">
+   <rParent name="AlignmentTubes:ATEV"/>
+   <String  name="ChildName"    value="AlignmentTubes:Mirror"/>
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 0*mm, 0*mm, (580+40)*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 90*deg, 135*deg, 90*deg, 90*deg, 90*deg, 90*deg </Vector>
+  </Algorithm>
+
+  <!-- the sixth mirror (beam up) -->
+  <Algorithm name="global:DDAngular">
+   <rParent name="AlignmentTubes:ATEV"/>
+   <String  name="ChildName"    value="AlignmentTubes:Mirror"/>
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 0*mm, 0*mm, 1040*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 90*deg, 45*deg, 90*deg, 90*deg, 90*deg, 90*deg </Vector>
+  </Algorithm>
+
+<!-- end of the alignment tube (+z direction) -->
+
+<!-- start of the alignment tube (-z direction) -->
+  <!-- the Alignment Tube -->
+  <PosPart copyNumber = "10">
+   <rParent name = "AlignmentTubes:ATEV" />
+   <rChild name = "AlignmentTubes:AlignmentTube" />
+   <rRotation name = "rotations:000D"/>
+   <Translation x="0*fm" y="0*fm" z="-1*(567.5 + 2.0)*mm" />
+  </PosPart>
+
+  <!-- the first mirror (beam down) -->
+  <Algorithm name="global:DDAngular">
+   <rParent name="AlignmentTubes:ATEV"/>
+   <String  name="ChildName"    value="AlignmentTubes:Mirror"/>
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 0*mm, 0*mm, -1*100*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 90*deg, 135*deg, 90*deg, 90*deg, 90*deg, 90*deg </Vector>
+  </Algorithm>
+
+  <!-- the second mirror (beam up) -->
+  <Algorithm name="global:DDAngular">
+   <rParent name="AlignmentTubes:ATEV"/>
+   <String  name="ChildName"    value="AlignmentTubes:Mirror"/>
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 0*mm, 0*mm, -1*(100 + 40)*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 90*deg, 45*deg, 90*deg, 90*deg, 90*deg, 90*deg </Vector>
+  </Algorithm>
+
+  <!-- the third mirror (beam down) -->
+  <Algorithm name="global:DDAngular">
+   <rParent name="AlignmentTubes:ATEV"/>
+   <String  name="ChildName"    value="AlignmentTubes:Mirror"/>
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 0*mm, 0*mm, -1*340*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 90*deg, 135*deg, 90*deg, 90*deg, 90*deg, 90*deg </Vector>
+  </Algorithm>
+
+  <!-- the fourth mirror (beam up) -->
+  <Algorithm name="global:DDAngular">
+   <rParent name="AlignmentTubes:ATEV"/>
+   <String  name="ChildName"    value="AlignmentTubes:Mirror"/>
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 0*mm, 0*mm, -1*500*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 90*deg, 45*deg, 90*deg, 90*deg, 90*deg, 90*deg </Vector>
+  </Algorithm>
+
+  <!-- the fifth mirror (beam down) -->
+  <Algorithm name="global:DDAngular">
+   <rParent name="AlignmentTubes:ATEV"/>
+   <String  name="ChildName"    value="AlignmentTubes:Mirror"/>
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 0*mm, 0*mm, -1*(500 + 40)*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 90*deg, 135*deg, 90*deg, 90*deg, 90*deg, 90*deg </Vector>
+  </Algorithm>
+
+  <!-- the sixth mirror (beam up) -->
+  <Algorithm name="global:DDAngular">
+   <rParent name="AlignmentTubes:ATEV"/>
+   <String  name="ChildName"    value="AlignmentTubes:Mirror"/>
+   <Numeric name="N"            value="1" />
+   <Numeric name="StartCopyNo"  value="1" />
+   <Numeric name="IncrCopyNo"   value="1" />
+   <Numeric name="StartAngle"   value="0*deg"/>
+   <Numeric name="RangeAngle"   value="360*deg"/>
+   <Numeric name="Radius"       value="0*mm"/>
+   <Vector  name="Center" type="numeric" nEntries="3"> 0*mm, 0*mm, -1*860*mm</Vector>
+   <Vector  name="RotateSolid" type="numeric" nEntries="6"> 90*deg, 45*deg, 90*deg, 90*deg, 90*deg, 90*deg </Vector>
+  </Algorithm>
+<!-- end of the alignment tube (-z direction) -->
+
+</PosPartSection>
+
+</DDDefinition>

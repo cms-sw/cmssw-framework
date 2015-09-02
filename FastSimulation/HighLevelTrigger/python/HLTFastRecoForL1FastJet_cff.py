@@ -1,0 +1,10 @@
+import FWCore.ParameterSet.Config as cms
+
+import FastSimulation.HighLevelTrigger.DummyModule_cfi
+from FastSimulation.Tracking.GlobalPixelTracking_cff import *
+
+hltDisplacedHT250L1FastJetRegionalPixelSeedGenerator = FastSimulation.HighLevelTrigger.DummyModule_cfi.dummyModule.clone()
+hltDisplacedHT300L1FastJetRegionalPixelSeedGenerator = FastSimulation.HighLevelTrigger.DummyModule_cfi.dummyModule.clone()
+
+hltDisplacedHT250L1FastJetRegionalCkfTrackCandidates = cms.Sequence(globalPixelTracking)
+hltDisplacedHT300L1FastJetRegionalCkfTrackCandidates  = cms.Sequence(globalPixelTracking)

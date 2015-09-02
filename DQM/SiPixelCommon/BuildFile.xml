@@ -1,0 +1,8 @@
+<use   name="boost"/>
+<use   name="FWCore/Framework"/>
+<use   name="DQMServices/Core"/>
+<use   name="DataFormats/SiPixelDetId"/>
+
+<export>
+  <lib   name="1"/>
+</export>
