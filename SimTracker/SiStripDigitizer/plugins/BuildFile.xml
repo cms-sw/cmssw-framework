@@ -1,4 +1,0 @@
-<library   file="*.cc" name="SimTrackerSiStripDigitizerPlugins">
-  <use   name="SimTracker/SiStripDigitizer"/>
-  <flags   EDM_PLUGIN="1"/>
-</library>

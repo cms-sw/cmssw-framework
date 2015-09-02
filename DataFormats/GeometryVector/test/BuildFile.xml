@@ -1,4 +1,0 @@
-<use  name="DataFormats/GeometryVector"/>
-<bin  file="BasicVector_t.cpp" name="DataFormatsBasicVector_t"/>
-<bin  file="phiLess_t.cpp" name="GeomVectPhiLess_t"/>
-

@@ -1,3 +1,0 @@
-<use   name="FWCore/ParameterSet"/>
-<use   name="CommonTools/TrackerMap"/>
-<bin   name="print_TrackerMap" file="print_TrackerMap.cc"></bin>

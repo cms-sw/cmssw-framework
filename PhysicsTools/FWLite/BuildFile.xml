@@ -1,9 +1,0 @@
-<use   name="boost"/>
-<use   name="rootcore"/>
-<use   name="roothistmatrix"/>
-<use   name="CommonTools/Utils"/>
-<use   name="DataFormats/FWLite"/>
-<use   name="DataFormats/MuonReco"/>
-<export>
-  <lib   name="1"/>
-</export>

@@ -1,3 +1,0 @@
-<bin file="testSerializationCastorObjects.cpp">
-    <use   name="CondFormats/CastorObjects"/>
-</bin>

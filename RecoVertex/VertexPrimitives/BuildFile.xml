@@ -1,9 +1,0 @@
-<use   name="DataFormats/BeamSpot"/>
-<use   name="DataFormats/GeometrySurface"/>
-<use   name="DataFormats/GeometryVector"/>
-<use   name="DataFormats/VertexReco"/>
-<use   name="DataFormats/Candidate"/>
-<use   name="TrackingTools/TransientTrack"/>
-<export>
-  <lib   name="1"/>
-</export>

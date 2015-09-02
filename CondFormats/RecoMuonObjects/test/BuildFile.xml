@@ -1,3 +1,0 @@
-<bin file="testSerializationRecoMuonObjects.cpp">
-    <use   name="CondFormats/RecoMuonObjects"/>
-</bin>

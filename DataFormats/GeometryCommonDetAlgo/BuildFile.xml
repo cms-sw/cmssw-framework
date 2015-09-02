@@ -1,9 +1,0 @@
-<use   name="DataFormats/Math"/>
-<use   name="DataFormats/GeometrySurface"/>
-<use   name="DataFormats/GeometryVector"/>
-<use   name="DataFormats/Common"/>
-<use   name="FWCore/Utilities"/>
-
-<export>
-  <lib   name="1"/>
-</export>
