@@ -1,5 +1,0 @@
-<lcgdict>
-  <class name="DTTimeBoxPlotter"/>
-  <class name="DTTimeBoxFitter"/>
-  <class name="DTMeanTimerPlotter"/>
-</lcgdict>
