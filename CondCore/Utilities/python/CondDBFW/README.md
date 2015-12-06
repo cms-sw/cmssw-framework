@@ -1,1 +1,0 @@
-**For documentation on the setup process for testing, please refer to the project wiki (found in the menu on the left).**
