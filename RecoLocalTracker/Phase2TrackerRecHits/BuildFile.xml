@@ -1,8 +1,0 @@
-<use name="FWCore/Framework"/>
-<use name="FWCore/ParameterSet"/>
-<use name="RecoLocalTracker/ClusterParameterEstimator"/>
-<use name="DataFormats/Phase2TrackerCluster"/>
-<use name="DataFormats/Phase2TrackerRecHit"/>
-<export>
-    <lib name="1"/>
-</export>
