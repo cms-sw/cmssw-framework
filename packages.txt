@@ -27,8 +27,6 @@
 ^FWCore/TFWLiteSelectorTest$
 ^FWCore/Utilities$
 ^FWCore/Version$
-^HLTrigger/HLTcore$
-^HLTrigger/special$
 ^IOMC/RandomEngine$
 ^IOPool/Common$
 ^IOPool/Input$
