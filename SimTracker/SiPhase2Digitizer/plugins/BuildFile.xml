@@ -1,4 +1,0 @@
-<use name="SimTracker/SiPhase2Digitizer"/>
-<library   file="Phase2TrackerDigitizer.cc PSPDigitizerAlgorithm.cc Phase2TrackerDigitizerAlgorithm.cc PixelDigitizerAlgorithm.cc PSSDigitizerAlgorithm.cc SSDigitizerAlgorithm.cc" name="SimTrackerSiPhase2DigitizerPlugins">
-  <flags   EDM_PLUGIN="1"/>
-</library>
